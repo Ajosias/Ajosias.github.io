@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Helper</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="lms.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class = "nav-bar navbar-expand-md nav-light bg-dark navbar-dark sticky-top">
+<!-- Sidebar -->
+    <span class="open-slide">
+        <a class = "navbar-brand" href="#" onclick="openSlideMenu()">
+          <img src = "https://static.wixstatic.com/media/cef5df_26e04fd5f9d2493a88d323673d87463b~mv2.png/v1/fill/w_89,h_85,al_c,q_85,usm_0.66_1.00_0.01/wethinkcode-logo-white-border.webp" width = "90" height=80" class="d-inline-block align-top" alt="" margin-left ="2rem">
+        </a>
+    </span>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="lms_install.html">Installing and Updating the</a>
+        <a href="#">Tab</a>
+        <a href="#">Tab</a>
+        <a href="#">Tab</a>
+    </div>
+
+    <script>
+      function openSlideMenu(){
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+      }
+    
+      function closeSlideMenu(){
+        document.getElementById('side-menu').style.width = '0';
+        document.getElementById('main').style.marginLeft = '0';
+      }
+    </script>
+<!--/Sidebar -->    
+
+<div class = "container-fluid">
+	
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+    </button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="home_page.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Contact Staff</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Videos</a>
+			</li>
+			<li class="nav-item disable">
+				<a class="nav-link" href="#">button</a>
+			</li>
+			<li class="nav-item disable">
+				<a class="nav-link" href="#">button</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--Navigation-->
+
+<!--Content-->
+<div class="header">
+  <h2>WeThinkCode_ learning managment system</h2>
+</div>
+<div class="card text-black bg-white mb-3" style="max-width: 100rem;">
+  <img class="card-img-top" src="img/lms_logo.jpg" alt="">
+  <div class="card-body">
+    <h5 class="card-title">What is the LMS used for?</h5>
+    <h6 class="card-text" style="margin-top: 25px; font-size: 20px;">It is the application that WTC provides for distributing projects, tracking progress, saving, grading and reviewing your work. Without it you will not be able to start or submit any work. Correct use of the LMS will be needed to work through the curriculum without any issues.</h6>
+    <!--<p class="card-text"><small class="text-muted">Please read with care</small></p>-->
+    <div>
+      <h5 class="card-title">Basics you will need to know before continuing. </h5>
+      <d1> 
+        <dt><kbd>tilde</kbd> </dt>
+        <dd>- symbol stands for your home directory. If you are user, then the tilde (~) stands for <kbd> /home/user </kbd> </dd>
+        <dt><kbd>pwd</kbd></dt>
+        <dd>- Lets you to know in which directory you're located (pwd stands for "print working directory"). Example: "pwd" in the Desktop directory will show "~/Desktop". Note that the GNOME Terminal also displays this information in the title bar of its window. A useful mnemonic is "present working directory</dd>
+        <dt><kbd>ls</kbd></dt>
+        <dd>- The command will show you ('list') the files in your current directory. Used with certain options, you can see sizes of files, when files were made, and permissions of files. Example: <kbd>ls ~</kbd> will show you the files that are in your home directory.</dd>
+        <dd><kbd>cd</kbd></dd>
+        <dd>- The command will allow you to change directories. When you open a terminal you will be in your home directory. To move around the file system you will use cd. Examples:</dd>
+        <dd><kbd>cd /</kbd>  To navigate into the root directory</dd>
+        <dd><kbd>cd ~</kbd>  or <kbd>cd</kbd>To navigate to your home directory</dd>
+        <dd><kbd>cd ..</kbd> To navigate up one directory level</dd>
+        <dd><kbd>cd -</kbd>  To navigate to the previous directory</dd>
+      </d1>
+    </div>
+    <div>
+      <h5 class="card-title"> Installing and updating wtc-lms for remote users </h5>
+      <h6>So now that you have gone over the basics of the terminal </h6>
+    </div>
+  </div>
+</div>
+<!--<div class="card">
+  <div class="content-intro">
+    <p>WeThinkCode_ LMS (Learning managment system), is an in house learning app meant for the everyday use of the WTC student. In this section we will be walking you through key concepts you need to know as a student.</p>
+
+
+  </div>
+</div>-->
+
+</nav>

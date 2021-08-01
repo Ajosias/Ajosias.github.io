@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Helper</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link href="slack.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class = "nav-bar navbar-expand-md nav-light bg-dark navbar-dark sticky-top">
+<!-- Sidebar -->
+    <span class="open-slide">
+        <a class = "navbar-brand" href="#" onclick="openSlideMenu()">
+          <img src = "https://static.wixstatic.com/media/cef5df_26e04fd5f9d2493a88d323673d87463b~mv2.png/v1/fill/w_89,h_85,al_c,q_85,usm_0.66_1.00_0.01/wethinkcode-logo-white-border.webp" width = "90" height=80" class="d-inline-block align-top" alt="" margin-left ="2rem">
+        </a>
+    </span>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="slack2.html">What is Slack?</a>
+        <a href="slack3.html">What do I use Slack for?</a>
+        <a href="slack4.html">When do I use Slack?</a>
+        <a href="slack5.html">How can Slack help me as a student?</a>
+        <a href="slack6.html">Slack etiquette</a>
+        <a href="slack7.html">Guide to the Slack Top Bar</a>
+        <a href="slack8.html">Guide to the Slack Side Bar</a>
+    </div>
+
+    <script>
+      function openSlideMenu(){
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+      }
+    
+      function closeSlideMenu(){
+        document.getElementById('side-menu').style.width = '0';
+        document.getElementById('main').style.marginLeft = '0';
+      }
+    </script>
+<!--/Sidebar -->    
+
+<div class = "container-fluid">
+	
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+		<span class="navbar-toggler-icon"></span>
+    </button>
+	<div class="collapse navbar-collapse" id="navbarResponsive">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" href="../home_page.html">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Contact Staff</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Videos</a>
+			</li>
+			<li class="nav-item disable">
+				<a class="nav-link" href="#">button</a>
+			</li>
+			<li class="nav-item disable">
+				<a class="nav-link" href="#">button</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!--Navigation-->
+
+<!--Content-->
+<div class="header">
+  <h2>Slack</h2>
+</div>
+<div class="card text-black bg-white mb-3" style="max-width: 100rem;">
+  <img class="card-img-top" src="img/slack_logo.jpeg" alt="">
+  <div class="card-body">
+    <h5 class="card-title">Slack etiquette</h5>
+    <h6 class="card-text" style="margin-top: 25px; font-size: 20px;">
+        
+        Although you may use slack for private communications, and occasionally communications that are not strictly work related, it is important to remember that professional standards ALWAYS apply.
+        This means that your language, tone, writing, and subject matter MUST be of a standard to suit a professional workplace.
+        No swearing, rudeness, lack of respect or tollerance, non-PC or controversial subjects, or any bad behaviour is EVER acceptable.
+        WTC is here to prepare you for the workplace, thus anything that could get you sent to the Human Resources department in a workplace is liable to have you rempoved from WTC without warning.
+        As a rule of thumb - if you wouldn't say it to your grandmother, don't type it into Slack.  
+
+    
+    </h6>
+    <!--<p class="card-text"><small class="text-muted">Please read with care</small></p>-->
+    <div>
+      <h5 class="card-text" style="margin-top: 25px; font-size: 20px;">
+        
+    
+    </h5>
+    </div>
+  </div>
+</div>
+<!--<div class="card">
+  <div class="content-intro">
+    <p>WeThinkCode_ LMS (Learning managment system), is an in house learning app meant for the everyday use of the WTC student. In this section we will be walking you through key concepts you need to know as a student.</p>
+
+
+  </div>
+</div>-->
+
+</nav>
